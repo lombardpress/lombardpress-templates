@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title><!-- title [{ms-identifier} Transcription] --></title>
+        <author><!-- author --></author>
+        <editor><!-- editor --></editor>
+      </titleStmt>
+      <editionStmt>
+        <edition n="2015.02">
+          <title><!-- title [{ms-identifier} Transcription] --></title>
+          <date when="2015-02-19">February 19, 2015</date>
+        </edition>
+      </editionStmt>
+      <publicationStmt>
+        <publisher>LombardPress</publisher>
+        <availability status="free">
+          <p>Published under a <ref target="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons Attribution-NonCommercial-NoDerivs 3.0 License</ref></p>
+        </availability>
+        <date when="2015-02-19">February 19, 2015</date>
+      </publicationStmt>
+      <sourceDesc>
+        <listWit>
+          <witness xml:id="L" n="lon">London, British Museum Royal 10 A I</witness>
+        </listWit>
+      </sourceDesc>
+    </fileDesc>
+    <revisionDesc status="draft">
+      <listChange>
+        <change when="2015-02-19" who="#" status="draft" n="2015.02">
+          <p>Created file for the first time.</p>
+          <note type="status">
+            <note type="collobaration">Yes</note>
+            <note type="validating-schema">lbp-0.0.1</note>
+            <note type="transcription-type">documentary</note>
+          </note>
+        </change>
+      </listChange>
+    </revisionDesc>
+  </teiHeader>
+  <text xml:lang="la">
+    <front>
+      <div xml:id="includeList">
+        <xi:include href="https://bitbucket.org/lombardpress/lombardpress-lists/raw/master/workscited.xml" xpointer="worksCited"></xi:include>
+        <xi:include href="https://bitbucket.org/lombardpress/lombardpress-lists/raw/master/Prosopography.xml" xpointer="prosopography"></xi:include>
+      </div>
+    </front>
+    <body>
+      <div xml:id="itemdid">
+        <head><!-- title [{ms-identifier} Transcription] --></head>
+        <p><lb ed="#L"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+          <lb ed="#L"/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+          <lb ed="#L"/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
+          <lb ed="#L"/>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
+          <lb ed="#L"/>in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+          <lb ed="#L"/>nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+          <lb ed="#L"/>sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </body>
+  </text>
+</TEI>
