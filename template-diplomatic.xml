@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/0.0/diplomatic/diplomatic.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/0.0/diplomatic/diplomatic.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
@@ -10,7 +10,7 @@
         <editor><!-- editor --></editor>
       </titleStmt>
       <editionStmt>
-        <edition n="2015.02">
+        <edition n="0.0.0-dev">
           <title><!-- title [{ms-identifier} Transcription] --></title>
           <date when="2015-02-19">February 19, 2015</date>
         </edition>
@@ -30,13 +30,8 @@
     </fileDesc>
     <revisionDesc status="draft">
       <listChange>
-        <change when="2015-02-19" who="#" status="draft" n="2015.02">
+        <change when="2015-02-19" who="#" status="draft" n="0.0.0-dev">
           <p>Created file for the first time.</p>
-          <note type="status">
-            <note type="collobaration">Yes</note>
-            <note type="validating-schema">lbp-0.0.1</note>
-            <note type="transcription-type">documentary</note>
-          </note>
         </change>
       </listChange>
     </revisionDesc>

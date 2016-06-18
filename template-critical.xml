@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
-<?xml-model href="https://bitbucket.org/lombardpress/lombardpress-schema/raw/master/LombardPressODD.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<?xml-model href="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/0.0/critical/critical.rng" type="application/xml" schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="https://raw.githubusercontent.com/lombardpress/lombardpress-schema/develop/src/0.0/critical/critical.rng" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
 <TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:xi="http://www.w3.org/2001/XInclude">
   <teiHeader>
     <fileDesc>
@@ -10,7 +10,7 @@
         <editor><!-- editor --></editor>
       </titleStmt>
       <editionStmt>
-        <edition n="2015.02">
+        <edition n="0.0.0-dev">
           <title><!-- title --></title>
           <date when="2015-02-19">February 19, 2015</date>
         </edition>
@@ -30,13 +30,8 @@
     </fileDesc>
     <revisionDesc status="draft">
       <listChange>
-        <change when="2015-02-19" who="#" status="draft" n="2015.02">
+        <change when="2015-02-19" who="#" status="draft" n="0.0.0-dev">
           <p>Created file for the first time.</p>
-          <note type="status">
-            <note type="collobaration">Yes</note>
-            <note type="validating-schema">lbp-0.0.1</note>
-            <note type="transcription-type">critical</note>
-          </note>
         </change>
       </listChange>
     </revisionDesc>
@@ -44,8 +39,8 @@
   <text xml:lang="la">
     <front>
       <div xml:id="includeList">
-        <xi:include href="https://bitbucket.org/lombardpress/lombardpress-lists/raw/master/workscited.xml" xpointer="worksCited"></xi:include>
-        <xi:include href="https://bitbucket.org/lombardpress/lombardpress-lists/raw/master/Prosopography.xml" xpointer="prosopography"></xi:include>
+      	<xi:include href="https://raw.githubusercontent.com/lombardpress/lombardpress-lists/master/workscited.xml" xpointer="worksCited"></xi:include>
+      	<xi:include href="https://raw.githubusercontent.com/lombardpress/lombardpress-lists/master/Prosopography.xml" xpointer="prosopography"></xi:include>
       </div>
     </front>
     <body>
@@ -53,16 +48,19 @@
         <head><!-- title [{ms-identifier} Transcription] --></head>
         <p><lb ed="#L"/>Lorem ipsum dolor sit 
           <app>
-            <lem>amet,</lem>
+            <lem>amet</lem>
             <rdg wit="#L">amat</rdg>
-          </app> 
+          </app>, 
           consectetur adipiscing elit, 
-          <lb ed="#L"/>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-          <lb ed="#L"/>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-          <lb ed="#L"/>nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor 
-          <lb ed="#L"/>in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
-          <lb ed="#L"/>nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
-          <lb ed="#L"/>sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <cit>
+          	<quote>sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</quote>
+          	<bibl>xxxxx</bibl>
+          </cit>. 
+          Ut enim ad <mentioned>minim</mentioned> veniam, quis nostrud exercitation ullamco laboris 
+          nisi ut aliquip ex ea commodo consequat. <ref><name>Cicero</name> <title>De republica</title></ref> Duis aute irure dolor 
+          in reprehenderit in voluptate velit esse cillum dolore eu fugiat 
+          nulla pariatur. Excepteur sint occaecat cupidatat non proident, 
+          sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
       </div>
     </body>
   </text>
